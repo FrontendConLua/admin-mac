@@ -1,0 +1,93 @@
+@import "../../../assets/utils/mixins";
+.header {
+  height: 56px;
+  border: 0px, 0px, 1px, 0px;
+  display: flex;
+  justify-content: space-between;
+  &__left {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  &__hidden {
+    display: block;
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+  &__right {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  &__breadcrumbs {
+    display: flex;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    align-items: center;
+  }
+  &__breadcrumbs-disabled {
+    padding: 0.5rem 1rem;
+    color: var(--breadcrumbs-disabled);
+  }
+  &__breadcrumbs-line {
+    color: var(--breadcrumbs-line);
+  }
+  &__breadcrumbs-enabled {
+    color: var(--text-primary-color);
+    padding: 0.5rem 1rem;
+  }
+  &__svg {
+    fill: var(--text-primary-color);
+  }
+}
+
+.search-container {
+  background-color: var(--search-container); /* Color de fondo del campo */
+  padding: 8px 12px;
+  border-radius: 20px; /* Bordes redondeados */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: var(--search-width, 200px); /* Variable CSS para ajustar la anchura */
+  max-width: 100%;
+  // display: block;
+  @include respond-to(md) {
+    display: none;
+  }
+}
+
+.search-container input {
+  border: none;
+  background: none;
+  color: var(--text-primary-color);
+  outline: none;
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  flex: 1;
+  min-width: 0; /* Permitir que el input se reduzca según el tamaño del contenedor */
+  &::-webkit-input-placeholder {
+    color: var(--placeholder);
+  }
+
+  &:-moz-placeholder {
+    color: var(--placeholder);
+  }
+
+  &::-moz-placeholder {
+    color: var(--placeholder);
+  }
+
+  &:-ms-input-placeholder {
+    color: var(--placeholder);
+  }
+}
+
+.search-container .shortcut {
+  color: var(--placeholder); /* Color gris claro para el atajo de teclado */
+  font-size: 12px; /* Tamaño de fuente más pequeño */
+}
+
+.search-container svg {
+  fill: var(--placeholder); /* Color gris claro para la lupa */
+  min-width: 16px;
+}

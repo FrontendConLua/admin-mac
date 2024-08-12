@@ -1,27 +1,54 @@
-# AdminMac
+# 🖥️ MacOS-Style Dashboard with Angular 18
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+This project is an Angular 18 application that implements a macOS-style dashboard. The application is built using standalone components, which simplifies module management and boosts performance. The dashboard includes a sidebar, header and main content area, with support for light and dark themes.
 
-## Development server
+## 🚀 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **MacOS-style Interface:** Sleek design inspired by macOS with a customizable layout.
+- **Standalone Components:** All components are standalone, reducing dependencies and enhancing modularity.
+- **Responsive Design:** Optimized for different screen sizes.
+- **Light/Dark Mode:** Toggle between light and dark themes using CSS variables.
 
-## Code scaffolding
+## 🛠️ Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular 18:** Latest version of Angular, using standalone components.
+- **SCSS:** For styling with support for light and dark themes.
+- **TypeScript:** Ensuring type safety and modern JavaScript features.
+- **CSS Variables:** To easily manage themes and styling.
 
-## Build
+## 📦 Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone the repository:**
 
-## Running unit tests
+   ```bash
+   git clone https://github.com/yourusername/mac-dashboard-angular.git
+   cd mac-dashboard-angular
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Install dependencies:**
 
-## Running end-to-end tests
+   ```bash
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Run the application:**
 
-## Further help
+   After installing the dependencies, start the Angular development server with the following command:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```bash
+   ng serve
+   ```
+
+4. **Open the application:**
+
+   Open your web browser and navigate to:
+
+   http://localhost:4200/
+
+5. **Building the application for production:**
+
+   To build the application for production deployment, use the following command:
+
+   ```bash
+   ng build --prod
+   ```

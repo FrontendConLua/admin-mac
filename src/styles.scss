@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+
+:root {
+  --transition-normal: 0.3s ease;
+  --scrollbar: rgba(255, 255, 255, 0.1);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.4);
+  --scrollbar-thumb-hover: rgba(0, 0, 0, 0.5);
+}
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-family: "Inter", sans-serif;
+  font-size: var(--small-font-size);
+  background-color: var(--background-color);
+  color: var(--text-primary-color);
+  transition: 0.5s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("./../public/cursor.svg") 16 16, auto;
+}
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+/*========== SCROLL BAR ==========*/
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  background-color: var(--scrollbar);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
