@@ -21,7 +21,7 @@ This project is an Angular 18 application that implements a macOS-style dashboar
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/mac-dashboard-angular.git
+   git clone https://github.com/FrontendConLua/admin-mac.git
    cd mac-dashboard-angular
    ```
 
